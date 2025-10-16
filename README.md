@@ -265,17 +265,15 @@ Simulations allow dumping design and test bench signals into a waveform
 
 Steps for simulation – Run the simulation command with simulator options
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a921d4b1-d5ff-40db-97fe-4eb1ade497d5" />
-
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6a9c6422-4610-4fec-8dda-77a14482a379" />
 
 #### Fig 6: Design Browser window for simulation
 
 #### ALU CASE:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9e79cf6c-0302-4ae1-b325-eb424b97c611" />
+<img width="1920" height="1080" alt="Screenshot (267)" src="https://github.com/user-attachments/assets/572facbf-4956-4a7f-8c83-e11d5313d35f" />
 
 #### ALU IFELSE:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/33113acf-d8fa-456c-8b97-09b577d1de38" />
+<img width="1920" height="1080" alt="Screenshot (274)" src="https://github.com/user-attachments/assets/cfe9a62a-e1f8-4057-ac39-cc8adc5ee4d7" />
 
 #### Fig 7: Simulation Waveform Window
 
@@ -303,18 +301,31 @@ The Liberty files are present in the library path,
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/33eab103-7245-4032-9f11-315f859e2807" />
 
 #### ALU IFELSEIF:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4a592d0c-a12a-4ff3-9ff2-488b641b6154" />
 
 #### Fig 8: Synthesis RTL Schematic using case and ifelseif construct
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7e424078-7507-43f3-851b-6d66255e7063" />
+#### ALU CASE:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/970d6321-e1e9-48d8-969d-fa497a1bbfeb" />
+
+#### ALU IFELSEIF:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/27bcc0e3-d99f-4726-b8b1-b7551eab5522" />
 
 #### Fig 9: Area report of case and ifelseif construct
 
+#### ALU CASE:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/013b9781-0904-4a7c-9c10-58a250d947d2" />
+
+#### ALU IFELSEIF:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c0d5d322-3b35-45e2-ad1a-42f9cd2548f6" />
 
 #### Fig 10: Power Report of case and ifelseif construct
 
+#### ALU CASE:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b92d78e4-07fa-4c86-be11-b94e254420ff" />
+
+#### ALU IFELSEIF:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/190835eb-7b65-48a6-a5e5-7612540be443" />
 
 #### Fig 11: Timing Report of case and ifelseif construct
 
