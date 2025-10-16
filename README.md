@@ -90,6 +90,8 @@ We are simulating a verilog design without using any libraries
 
 Click “OK” in the “nclaunch: Open Design Directory” window, as shown in the figure below
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5cd9701c-6395-417d-974c-33be24d25235" />
+
 #### Fig 2: Selection of Don’t include any libraries
 An ‘NCLaunch window’ appears as shown in the figure below
 
@@ -98,6 +100,8 @@ Left side, you can see the HDL files. The right side of the window has Worklib a
 Worklib is the directory where all the compiled codes are stored, while Snapshot will have the output of elaboration, which in turn goes for simulation.
 
 To perform the function simulation, the following three steps are involved: Compilation, Elaboration and Simulation.
+
+<img width="1920" height="1080" alt="Screenshot (264)" src="https://github.com/user-attachments/assets/396c5e64-1afe-40ba-91c7-33a0ca685e5c" />
 
 #### Fig 3: Nclaunch Window
 
@@ -120,6 +124,8 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile filename.v
 Left side select the file and in Tools: launch verilog compiler with current selection will get enable. Click it to compile the code
 
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d40bf07b-ab10-4a0d-a7da-99dea5367dfe" />
 
 #### Fig 4: Compiled database in WorkLib
 After compilation, it will come under worklib. You can see on the right side window
@@ -151,6 +157,8 @@ Outputs: Elaborate database updated in the mapped library if successful, generat
 
 After elaboration, the file will come under snapshot. Select the test bench and simulate it.
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/65d8f5ba-6807-4454-b070-9c4ff91e5c7f" />
+
 #### Fig 5: Elaboration Launch Option
 
 #### Step 3: Simulation:
@@ -164,7 +172,14 @@ Simulations allow dumping design and test bench signals into a waveform
 
 Steps for simulation – Run the simulation command with simulator options
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a921d4b1-d5ff-40db-97fe-4eb1ade497d5" />
+
 #### Fig 6: Design Browser window for simulation
+
+#### ALU CASE:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9e79cf6c-0302-4ae1-b325-eb424b97c611" />
+
+#### ALU IFELSE:
 
 #### Fig 7: Simulation Waveform Window
 
