@@ -275,10 +275,10 @@ Steps for simulation – Run the simulation command with simulator options
 #### Fig 6: Design Browser window for simulation
 
 #### ALU CASE:
-<img width="1920" height="1080" alt="Screenshot (267)" src="https://github.com/user-attachments/assets/572facbf-4956-4a7f-8c83-e11d5313d35f" />
+<img width="1920" height="1080" alt="Screenshot (167)" src="https://github.com/user-attachments/assets/98169307-2925-4577-98b3-9c61c85313fa" />
 
 #### ALU IFELSE:
-<img width="1920" height="1080" alt="Screenshot (274)" src="https://github.com/user-attachments/assets/cfe9a62a-e1f8-4057-ac39-cc8adc5ee4d7" />
+<img width="1920" height="1080" alt="Screenshot (167)" src="https://github.com/user-attachments/assets/98169307-2925-4577-98b3-9c61c85313fa" />
 
 #### Fig 7: Simulation Waveform Window
 
@@ -303,45 +303,48 @@ The Liberty files are present in the library path,
 • Genus Script file with .tcl file Extension commands are executed one by one to synthesize the netlist. Or use source run.tcl command in the terminal window to view the netlist, and a log file will be created in the working folder.
 
 #### ALU CASE:
-<img width="1920" height="1080" alt="Screenshot (167)" src="https://github.com/user-attachments/assets/609d0ca5-eb2e-4612-a695-3b8ea80076b7" />
 
+<img width="1920" height="1080" alt="Screenshot (177)" src="https://github.com/user-attachments/assets/7c4fd4b6-7152-42cb-9b4b-b416d8911f57" />
 
 #### ALU IFELSEIF:
-<img width="1920" height="1080" alt="Screenshot (167)" src="https://github.com/user-attachments/assets/98169307-2925-4577-98b3-9c61c85313fa" />
+
+<img width="1920" height="1080" alt="Screenshot (182)" src="https://github.com/user-attachments/assets/e842bd6b-e6c2-4d4f-a1d5-2deb03c26f74" />
 
 
 #### Fig 8: Synthesis RTL Schematic using case and ifelseif construct
 
 #### ALU CASE:
-<img width="1920" height="1080" alt="Screenshot (177)" src="https://github.com/user-attachments/assets/7c4fd4b6-7152-42cb-9b4b-b416d8911f57" />
-
+<img width="1920" height="1080" alt="Screenshot (213)" src="https://github.com/user-attachments/assets/6a999a70-92ff-4984-aa6c-f64fe5668720" />
 
 #### ALU IFELSEIF:
-<img width="1920" height="1080" alt="Screenshot (182)" src="https://github.com/user-attachments/assets/e842bd6b-e6c2-4d4f-a1d5-2deb03c26f74" />
+<img width="1920" height="1080" alt="Screenshot (211)" src="https://github.com/user-attachments/assets/ff2b534c-affb-4b2b-b222-6c069d21dda0" />
 
 
 #### Fig 9: Area report of case and ifelseif construct
 
 #### ALU CASE:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/013b9781-0904-4a7c-9c10-58a250d947d2" />
+<img width="1920" height="1080" alt="Screenshot (214)" src="https://github.com/user-attachments/assets/8e586238-48c2-453a-9570-99c9a7bc6437" />
+
 
 #### ALU IFELSEIF:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c0d5d322-3b35-45e2-ad1a-42f9cd2548f6" />
+<img width="1920" height="1080" alt="Screenshot (210)" src="https://github.com/user-attachments/assets/a1ee917e-1751-489e-9198-2bbebabb9769" />
+
 
 #### Fig 10: Power Report of case and ifelseif construct
 
 #### ALU CASE:
-<img width="1920" height="1080" alt="Screenshot (214)" src="https://github.com/user-attachments/assets/cd9a832a-68bc-44bd-b2ee-0e77b7bbc14c" />
+<img width="1920" height="1080" alt="Screenshot (215)" src="https://github.com/user-attachments/assets/d99a91f1-6c10-4dc4-be8f-ca9f127a56b1" />
+
+
 
 #### ALU IFELSEIF:
-<img width="1920" height="1080" alt="Screenshot (210)" src="https://github.com/user-attachments/assets/6f713df0-6284-4a00-8988-d30f3f4071c6" />
+<img width="1920" height="1080" alt="Screenshot (212)" src="https://github.com/user-attachments/assets/60c30829-7063-4158-8202-f186a9ac039c" />
+
 
 
 #### Fig 11: Timing Report of case and ifelseif construct
-<img width="1920" height="1080" alt="Screenshot (215)" src="https://github.com/user-attachments/assets/10e9a882-fcb5-4a60-b886-deb6e24887be" />
 
-
-<img width="1920" height="1080" alt="Screenshot (212)" src="https://github.com/user-attachments/assets/ab75debc-02a2-46c0-96fe-690cbcc7b026" />
+<img width="955" height="631" alt="image" src="https://github.com/user-attachments/assets/b8c2aada-ed46-44ba-92b2-4b8dff4f3e4f" />
 
 #### Fig 12: Tabulate Area,Power and Timing Report Comparision of ALU using case and ifelseif construct
 
