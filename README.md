@@ -34,7 +34,29 @@ A Blank Document opens up into which the following source code can be typed.
 To verify the Functionality using the Test Bench
 
 #### Source Code – Using Case Statement :
-(Include program here)
+```
+module alu_case(y,a,b,f); 
+input [31:0]a;
+input [31:0]b;
+input [2:0]f; 
+output reg [31:0]y; 
+always@(*)
+begin 
+case(f)
+3'b000:y=a&b;		//AND Operation
+3'b001:y=a|b;		//OR Operation
+3'b010:y=~(a&b);	//NAND Operation
+3'b011:y=~(a|b);	//NOR Operation
+3'b100:y=a^b;    	//XOR Operation
+3'b101:y=a+b;		//Addition
+3'b110:y=a-b;		//Subtraction
+3'b111:y=a*b;		//Multiply 
+default:y=32'bx;
+endcase
+end 
+endmodule
+
+```
 
 Use the Save option or Ctrl+S to save the code, or click on the save option from the top-right corner and close the text file.
 
@@ -42,15 +64,86 @@ Use the Save option or Ctrl+S to save the code, or click on the save option from
 Similarly, create your test bench using gedit <filename_tb>.v to open a new blank document (alu_case_tb.v).
 
 #### Test Bench :
-(Include test bench program here)
+```
+module alu_case_tb; 
+reg [31:0]a;
+reg [31:0]b;
+reg [2:0]f;
+wire [31:0]y;
+alu_case dut(.y(y),.a(a),.b(b),.f(f)); 
+initial
+begin a=32'h00000000; 
+b=32'h00110001; 
+#10 f=3'b000;
+#10 f=3'b001;
+#10 f=3'b010;
+#10 f=3'b011;
+#10 f=3'b100;
+#10 f=3'b101;
+#10 f=3'b110;
+#10 f=3'b111;
+end 
+initial
+#100 $finish; 
+endmodule
+```
 
 Use the Save option or Ctrl+S to save the code, or click on the save option from the top-right corner and close the text file.
 
 #### Source Code - Using If Statement :
-(Include program here)
+```
+module alu_ifelseif(y,a,b,f);
+input [31:0]a;
+input [31:0]b;
+input [2:0]f; 
+output reg [31:0]y; 
+always@(*)
+begin
+if(f==3'b000)
+y=a&b;			//AND Operation 
+else if (f==3'b001)
+y=a|b;	         	//OR Operation
+else if (f==3'b010)
+y=~(a&b);        	//NAND Operation
+else if (f==3'b011)
+y=~(a|b);		//NOR Operation
+else if (f==3'b100)
+y=a^b;			//XOR Operation
+else if (f==3'b101)
+y=a+b;        		//Addition
+ else if (f==3'b110)
+y=a-b;			//Subtraction 
+else if (f==3'b111)
+y=a*b;			//Multiply 
+else
+y=32'bx; 
+end 
+endmodule
+```
 
 #### Test Bench :
-(Include program here)
+```
+module alu_ifelseif_tb; 
+reg [31:0]a;
+reg [31:0]b;
+reg [2:0]f;
+wire [31:0]y;
+alu_ifelseif dut(.y(y),.a(a),.b(b),.f(f)); 
+initial
+begin a=32'h00000000; 
+b=32'h00110001; 
+#10 f=3'b000;
+#10 f=3'b001;
+#10 f=3'b010;
+#10 f=3'b011;
+#10 f=3'b100;
+#10 f=3'b101;
+#10 f=3'b110;
+#10 f=3'b111;
+end initial
+#100 $finish; 
+endmodule
+```
 
 Functional Simulation for each design
 
@@ -90,6 +183,9 @@ We are simulating a verilog design without using any libraries
 
 Click “OK” in the “nclaunch: Open Design Directory” window, as shown in the figure below
 
+<img width="1920" height="1080" alt="Screenshot (170)" src="https://github.com/user-attachments/assets/fccd3099-2b03-40dd-a23c-d470b2fb66db" />
+
+
 #### Fig 2: Selection of Don’t include any libraries
 An ‘NCLaunch window’ appears as shown in the figure below
 
@@ -98,6 +194,9 @@ Left side, you can see the HDL files. The right side of the window has Worklib a
 Worklib is the directory where all the compiled codes are stored, while Snapshot will have the output of elaboration, which in turn goes for simulation.
 
 To perform the function simulation, the following three steps are involved: Compilation, Elaboration and Simulation.
+
+<img width="1920" height="1080" alt="Screenshot (172)" src="https://github.com/user-attachments/assets/c6500dd8-5b14-4051-a4de-a531d03a446c" />
+
 
 #### Fig 3: Nclaunch Window
 
@@ -120,6 +219,9 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile filename.v
 Left side select the file and in Tools: launch verilog compiler with current selection will get enable. Click it to compile the code
 
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
+
+<img width="1920" height="1080" alt="Screenshot (172)" src="https://github.com/user-attachments/assets/3e0dea5a-a809-4eea-9189-cc74b387a7fb" />
+
 
 #### Fig 4: Compiled database in WorkLib
 After compilation, it will come under worklib. You can see on the right side window
@@ -151,6 +253,9 @@ Outputs: Elaborate database updated in the mapped library if successful, generat
 
 After elaboration, the file will come under snapshot. Select the test bench and simulate it.
 
+<img width="1920" height="1080" alt="Screenshot (171)" src="https://github.com/user-attachments/assets/eb8de055-b2e5-4bc1-8346-fa1cfdddd44f" />
+
+
 #### Fig 5: Elaboration Launch Option
 
 #### Step 3: Simulation:
@@ -164,7 +269,16 @@ Simulations allow dumping design and test bench signals into a waveform
 
 Steps for simulation – Run the simulation command with simulator options
 
+<img width="1920" height="1080" alt="Screenshot (175)" src="https://github.com/user-attachments/assets/61888245-81f3-4ba6-9e56-808b0aec3f21" />
+
+
 #### Fig 6: Design Browser window for simulation
+
+#### ALU CASE:
+<img width="1920" height="1080" alt="Screenshot (267)" src="https://github.com/user-attachments/assets/572facbf-4956-4a7f-8c83-e11d5313d35f" />
+
+#### ALU IFELSE:
+<img width="1920" height="1080" alt="Screenshot (274)" src="https://github.com/user-attachments/assets/cfe9a62a-e1f8-4057-ac39-cc8adc5ee4d7" />
 
 #### Fig 7: Simulation Waveform Window
 
@@ -188,13 +302,46 @@ The Liberty files are present in the library path,
 
 • Genus Script file with .tcl file Extension commands are executed one by one to synthesize the netlist. Or use source run.tcl command in the terminal window to view the netlist, and a log file will be created in the working folder.
 
+#### ALU CASE:
+<img width="1920" height="1080" alt="Screenshot (167)" src="https://github.com/user-attachments/assets/609d0ca5-eb2e-4612-a695-3b8ea80076b7" />
+
+
+#### ALU IFELSEIF:
+<img width="1920" height="1080" alt="Screenshot (167)" src="https://github.com/user-attachments/assets/98169307-2925-4577-98b3-9c61c85313fa" />
+
+
 #### Fig 8: Synthesis RTL Schematic using case and ifelseif construct
+
+#### ALU CASE:
+<img width="1920" height="1080" alt="Screenshot (177)" src="https://github.com/user-attachments/assets/7c4fd4b6-7152-42cb-9b4b-b416d8911f57" />
+
+
+#### ALU IFELSEIF:
+<img width="1920" height="1080" alt="Screenshot (182)" src="https://github.com/user-attachments/assets/e842bd6b-e6c2-4d4f-a1d5-2deb03c26f74" />
+
 
 #### Fig 9: Area report of case and ifelseif construct
 
+#### ALU CASE:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/013b9781-0904-4a7c-9c10-58a250d947d2" />
+
+#### ALU IFELSEIF:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c0d5d322-3b35-45e2-ad1a-42f9cd2548f6" />
+
 #### Fig 10: Power Report of case and ifelseif construct
 
+#### ALU CASE:
+<img width="1920" height="1080" alt="Screenshot (214)" src="https://github.com/user-attachments/assets/cd9a832a-68bc-44bd-b2ee-0e77b7bbc14c" />
+
+#### ALU IFELSEIF:
+<img width="1920" height="1080" alt="Screenshot (210)" src="https://github.com/user-attachments/assets/6f713df0-6284-4a00-8988-d30f3f4071c6" />
+
+
 #### Fig 11: Timing Report of case and ifelseif construct
+<img width="1920" height="1080" alt="Screenshot (215)" src="https://github.com/user-attachments/assets/10e9a882-fcb5-4a60-b886-deb6e24887be" />
+
+
+<img width="1920" height="1080" alt="Screenshot (212)" src="https://github.com/user-attachments/assets/ab75debc-02a2-46c0-96fe-690cbcc7b026" />
 
 #### Fig 12: Tabulate Area,Power and Timing Report Comparision of ALU using case and ifelseif construct
 
