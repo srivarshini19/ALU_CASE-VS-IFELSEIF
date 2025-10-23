@@ -183,7 +183,8 @@ We are simulating a verilog design without using any libraries
 
 Click “OK” in the “nclaunch: Open Design Directory” window, as shown in the figure below
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5cd9701c-6395-417d-974c-33be24d25235" />
+<img width="1920" height="1080" alt="Screenshot (170)" src="https://github.com/user-attachments/assets/fccd3099-2b03-40dd-a23c-d470b2fb66db" />
+
 
 #### Fig 2: Selection of Don’t include any libraries
 An ‘NCLaunch window’ appears as shown in the figure below
@@ -194,7 +195,8 @@ Worklib is the directory where all the compiled codes are stored, while Snapshot
 
 To perform the function simulation, the following three steps are involved: Compilation, Elaboration and Simulation.
 
-<img width="1920" height="1080" alt="Screenshot (264)" src="https://github.com/user-attachments/assets/396c5e64-1afe-40ba-91c7-33a0ca685e5c" />
+<img width="1920" height="1080" alt="Screenshot (172)" src="https://github.com/user-attachments/assets/c6500dd8-5b14-4051-a4de-a531d03a446c" />
+
 
 #### Fig 3: Nclaunch Window
 
@@ -218,7 +220,8 @@ Left side select the file and in Tools: launch verilog compiler with current sel
 
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d40bf07b-ab10-4a0d-a7da-99dea5367dfe" />
+<img width="1920" height="1080" alt="Screenshot (172)" src="https://github.com/user-attachments/assets/3e0dea5a-a809-4eea-9189-cc74b387a7fb" />
+
 
 #### Fig 4: Compiled database in WorkLib
 After compilation, it will come under worklib. You can see on the right side window
@@ -250,7 +253,8 @@ Outputs: Elaborate database updated in the mapped library if successful, generat
 
 After elaboration, the file will come under snapshot. Select the test bench and simulate it.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/65d8f5ba-6807-4454-b070-9c4ff91e5c7f" />
+<img width="1920" height="1080" alt="Screenshot (171)" src="https://github.com/user-attachments/assets/eb8de055-b2e5-4bc1-8346-fa1cfdddd44f" />
+
 
 #### Fig 5: Elaboration Launch Option
 
@@ -265,7 +269,8 @@ Simulations allow dumping design and test bench signals into a waveform
 
 Steps for simulation – Run the simulation command with simulator options
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6a9c6422-4610-4fec-8dda-77a14482a379" />
+<img width="1920" height="1080" alt="Screenshot (175)" src="https://github.com/user-attachments/assets/61888245-81f3-4ba6-9e56-808b0aec3f21" />
+
 
 #### Fig 6: Design Browser window for simulation
 
@@ -298,18 +303,22 @@ The Liberty files are present in the library path,
 • Genus Script file with .tcl file Extension commands are executed one by one to synthesize the netlist. Or use source run.tcl command in the terminal window to view the netlist, and a log file will be created in the working folder.
 
 #### ALU CASE:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/33eab103-7245-4032-9f11-315f859e2807" />
+<img width="1920" height="1080" alt="Screenshot (167)" src="https://github.com/user-attachments/assets/609d0ca5-eb2e-4612-a695-3b8ea80076b7" />
+
 
 #### ALU IFELSEIF:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4a592d0c-a12a-4ff3-9ff2-488b641b6154" />
+<img width="1920" height="1080" alt="Screenshot (167)" src="https://github.com/user-attachments/assets/98169307-2925-4577-98b3-9c61c85313fa" />
+
 
 #### Fig 8: Synthesis RTL Schematic using case and ifelseif construct
 
 #### ALU CASE:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/970d6321-e1e9-48d8-969d-fa497a1bbfeb" />
+<img width="1920" height="1080" alt="Screenshot (177)" src="https://github.com/user-attachments/assets/7c4fd4b6-7152-42cb-9b4b-b416d8911f57" />
+
 
 #### ALU IFELSEIF:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/27bcc0e3-d99f-4726-b8b1-b7551eab5522" />
+<img width="1920" height="1080" alt="Screenshot (182)" src="https://github.com/user-attachments/assets/e842bd6b-e6c2-4d4f-a1d5-2deb03c26f74" />
+
 
 #### Fig 9: Area report of case and ifelseif construct
 
@@ -322,14 +331,17 @@ The Liberty files are present in the library path,
 #### Fig 10: Power Report of case and ifelseif construct
 
 #### ALU CASE:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b92d78e4-07fa-4c86-be11-b94e254420ff" />
+<img width="1920" height="1080" alt="Screenshot (214)" src="https://github.com/user-attachments/assets/cd9a832a-68bc-44bd-b2ee-0e77b7bbc14c" />
 
 #### ALU IFELSEIF:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/190835eb-7b65-48a6-a5e5-7612540be443" />
+<img width="1920" height="1080" alt="Screenshot (210)" src="https://github.com/user-attachments/assets/6f713df0-6284-4a00-8988-d30f3f4071c6" />
+
 
 #### Fig 11: Timing Report of case and ifelseif construct
+<img width="1920" height="1080" alt="Screenshot (215)" src="https://github.com/user-attachments/assets/10e9a882-fcb5-4a60-b886-deb6e24887be" />
 
-<img width="955" height="631" alt="image" src="https://github.com/user-attachments/assets/e6e8523b-3f9c-409a-8199-1bccc15abca8" />
+
+<img width="1920" height="1080" alt="Screenshot (212)" src="https://github.com/user-attachments/assets/ab75debc-02a2-46c0-96fe-690cbcc7b026" />
 
 #### Fig 12: Tabulate Area,Power and Timing Report Comparision of ALU using case and ifelseif construct
 
