@@ -344,10 +344,11 @@ The Liberty files are present in the library path,
 
 #### Fig 11: Timing Report of case and ifelseif construct
 
+<img width="1185" height="787" alt="image" src="https://github.com/user-attachments/assets/328002fc-6c18-464a-a24c-3ee717d52715" />
 
 
 #### Fig 12: Tabulate Area,Power and Timing Report Comparision of ALU using case and ifelseif construct
 
 ## Result
-The 32-bit ALU implemented using behavioural case statements and if–elseif constructs was successfully verified under Incisive (ncvlog/ncsim) for all tested vectors. Both implementations were functionally correct and synthesizable. Synthesis using Cadence Genus generated gate-level netlists along with area, timing, and power reports.
-A comparative analysis revealed that the case-statement-based ALU resulted in slightly lower area and better timing performance, while the if–elseif-based ALU exhibited higher logic complexity and marginally increased delay due to sequential decision evaluation. Both designs, however, produced identical functional outputs.
+The 32-bit ALU implemented using behavioural case statements and if–elseif constructs was successfully verified under Incisive (ncvlog/ncsim) for all tested vectors. Both implementations were functionally correct and synthesizable. 
+Both designs, however, produced identical functional outputs for area,power and timing analysis.
